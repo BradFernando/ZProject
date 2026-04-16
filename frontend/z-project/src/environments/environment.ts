@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: (globalThis as any)['env']?.['apiUrl'] || 'http://localhost:8080/api'
+  apiUrl: 'http://localhost:8080/api' // Cambiar por la URL real de producción en el despliegue
 };

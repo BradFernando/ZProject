@@ -249,7 +249,7 @@ export class PolicyListComponent implements OnInit {
     return this.policyForm.get(control)?.touched && this.policyForm.get(control)?.invalid;
   }
 
-  getTypeSeverity(type: string): "info" | "success" | "warn" | "danger" | "secondary" | "contrast" | undefined {
+  getTypeSeverity(type: string): "info" | "success" | "warn" | "danger" | "secondary" | "contrast" | null | undefined {
     switch (type) {
       case 'VIDA': return 'info';
       case 'AUTOMOVIL': return 'warn';
