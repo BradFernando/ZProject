@@ -116,9 +116,9 @@ export class MyPoliciesComponent implements OnInit {
   policies$: Observable<Policy[]> = inject(Store).select(InsuranceState.clientPolicies);
 
   constructor(
-    private store: Store,
-    private messageService: MessageService,
-    private confirmationService: ConfirmationService
+    private readonly store: Store,
+    private readonly messageService: MessageService,
+    private readonly confirmationService: ConfirmationService
   ) {}
 
   /**
