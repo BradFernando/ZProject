@@ -1,0 +1,135 @@
+/* Zurich Brand Colors */
+:root {
+  --zurich-blue: #003399;
+  --zurich-light-blue: #2167ad;
+  --zurich-white: #ffffff;
+  --zurich-gray: #f8fafc;
+  --zurich-text-dark: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--zurich-gray);
+  color: var(--zurich-text-dark);
+}
+
+/* Header & Navigation Styles */
+.zurich-header {
+  background-color: var(--zurich-blue);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.active-nav {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.zurich-avatar-top {
+  background-color: white !important;
+  color: var(--zurich-blue) !important;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.user-profile-badge:hover .zurich-avatar-top {
+  transform: scale(1.05);
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.zurich-user-menu {
+  border-radius: 12px !important;
+  padding: 0.5rem !important;
+}
+
+.zurich-bg {
+  background-color: var(--zurich-blue) !important;
+  color: white !important;
+}
+
+.zurich-text {
+  color: var(--zurich-blue) !important;
+}
+
+.p-button.zurich-btn {
+  background-color: var(--zurich-blue);
+  border-color: var(--zurich-blue);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+.p-button.zurich-btn:hover {
+  background-color: var(--zurich-light-blue);
+  border-color: var(--zurich-light-blue);
+}
+
+/* Custom card style */
+.zurich-card {
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.zurich-card .p-card-body {
+  padding: 2rem !important;
+}
+
+/* Tables & Lists */
+.p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  padding: 1rem;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 1rem;
+}
+
+.p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Forms & Inputs */
+.p-inputtext {
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+}
+
+.p-inputtext:focus {
+  border-color: var(--zurich-blue);
+  box-shadow: 0 0 0 2px rgba(0, 51, 153, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
